@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -34,7 +35,7 @@ const Login = () => {
         </div>
 
         <button className="btn-submit">Login</button>
-        <p className="form-small"><small>New to ema-jhon ?  <span>Create new account</span></small></p>
+        <p className="form-small"><small>New to ema-jhon ?  <Link to="/signup"><span>Create new account</span></Link></small></p>
 
         <p className="or-box">or</p>
 
