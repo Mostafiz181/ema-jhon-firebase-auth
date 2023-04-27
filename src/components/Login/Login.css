@@ -1,0 +1,110 @@
+.form-container {
+  width: 500px;
+  /* height: 600px; */
+  padding: 20px 0;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+  padding: 0 10px;
+  -webkit-box-shadow: -11px 11px 5px 0px rgba(235, 138, 18, 3);
+  -moz-box-shadow: -11px 11px 5px 0px rgba(235, 138, 18, 3);
+  box-shadow: -11px 11px 5px 0px rgba(235, 138, 18, 3);
+}
+
+.form-title {
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 29px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 9px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #2a414f;
+  margin-bottom: 10px;
+}
+
+.form-control input {
+  width: 490px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.form-control input::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #2a414f;
+}
+
+.btn-submit {
+  width: 99%;
+  height: 70px;
+  background: rgba(255, 153, 0, 0.3);
+  margin-top: 30px;
+  font-size: 20px;
+  color: #2a414f;
+  font-family: "Lato";
+  font-weight: bold;
+  border: 0;
+  transition: 0.4s;
+}
+
+.btn-submit:hover {
+  background: rgba(255, 153, 0, 0.6);
+}
+
+.form-small {
+  text-align: center;
+  color: #2a414f;
+  font-size: 15px;
+}
+
+.form-small span {
+  color: #ff9900;
+}
+
+.or-box {
+  text-align: center;
+  position: relative;
+}
+
+.or-box::after {
+  position: absolute;
+  top: 14px;
+  left: 90px;
+  content: "";
+  width: 130px;
+  height: 2px;
+  background-color: #95a0a7;
+}
+
+.or-box::before {
+  position: absolute;
+  top: 14px;
+  right: 91px;
+  content: "";
+  width: 130px;
+  height: 2px;
+  background-color: #95a0a7;
+}
+
+.btn-google {
+  width: 100%;
+  border: 2px solid #95a0a7;
+  background: rgba(255, 153, 0, 0.3);
+  font-size: 20px;
+  color: #2a414f;
+  font-family: "Lato";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
