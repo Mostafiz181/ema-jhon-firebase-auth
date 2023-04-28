@@ -11,6 +11,7 @@ const AuthProviders = ({children}) => {
     // const user = {displayName: "mostafizur"}
 
     const [user,setUser]= useState(null);
+    const [loading, setLoading]= useState(true)
 
     const createUser=(email,password)=>{
         return createUserWithEmailAndPassword(auth,email,password)
@@ -24,12 +25,17 @@ const AuthProviders = ({children}) => {
         return signOut(auth)
     }
     useEffect(()=>{
-        onAuthStateChanged(auth, currentUser=>{
+        const unsubscribe= onAuthStateChanged(auth, currentUser=>{
             setUser(currentUser)
+            setLoading(false)
         })
+        return ()=>{
+            return unsubscribe
+        }
     },[])
     const authInfo ={
         user,
+        loading,
         createUser,
         signIn,
         logOut
